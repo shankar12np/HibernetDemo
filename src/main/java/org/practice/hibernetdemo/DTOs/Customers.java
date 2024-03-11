@@ -12,25 +12,7 @@ public class Customers {
     private String name;
 
     private String address;
-
-    public Customers() {
-    }
-
-    public Customers(Long id, String name, String address) {
-        this.id = id;
-        this.name = name;
-        this.address = address;
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getName(String name) {
+    public String getName() {
         return name;
     }
 
@@ -38,11 +20,13 @@ public class Customers {
         this.name = name;
     }
 
-    public String getAddress(String address) {
+    public String getAddress() {
         return address;
     }
 
     public void setAddress(String address) {
         this.address = address;
     }
+
+
 }

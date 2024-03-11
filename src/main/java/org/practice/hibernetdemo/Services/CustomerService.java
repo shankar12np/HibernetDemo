@@ -11,11 +11,12 @@ public class CustomerService {
     @Autowired
     CustomersDAO customersDAO;
 
-  @Transactional
-    public void addCostumers(String name, String address){
+    @Transactional
+    public void addCostumers(String name, String address) {
         Customers addedCostumer = new Customers();
-        addedCostumer.getName(name);
-        addedCostumer.getAddress(address);
+        addedCostumer.setName(name);
+        addedCostumer.setAddress(address);
         customersDAO.addCustomers(addedCostumer);
     }
+
 }
